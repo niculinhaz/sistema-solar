@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.30)
-project("atividade1")
+project("sistema_solar")
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -22,13 +22,13 @@ set(SOURCES
         src/globals.cpp
 )
 
-add_executable(atividade1 ${SOURCES})
+add_executable(sistema_solar ${SOURCES})
 
 file(COPY assets/texturas DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 file (COPY assets/sound DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
 if (WIN32)
-        target_link_libraries(atividade1 glfw3 opengl32 gdi32 glu32)
+        target_link_libraries(sistema_solar glfw3 opengl32 gdi32 glu32)
 else()
         find_package(OPEN_GL REQUIRED)
         find_package(GLU REQUIRED)
@@ -36,5 +36,5 @@ else()
         pkg_source_module(GLFW REQUIRED glfw3)
 
         include_directories(${GLFW_INCLUDE_DIRS})
-        target_link_libraries(atividade1 ${OPEN_gl_LIBRARY} ${GLU_LIBRARY} ${GLFW_LIBRARIES})
+        target_link_libraries(sistema_solar ${OPEN_gl_LIBRARY} ${GLU_LIBRARY} ${GLFW_LIBRARIES})
 endif()

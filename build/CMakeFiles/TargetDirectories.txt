@@ -1,0 +1,3 @@
+C:/Users/nicho/Downloads/trab_comp/build/CMakeFiles/sistema_solar.dir
+C:/Users/nicho/Downloads/trab_comp/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/nicho/Downloads/trab_comp/build/CMakeFiles/ZERO_CHECK.dir
